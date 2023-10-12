@@ -15,6 +15,7 @@ namespace PAC.WebAPI
 
     [ApiController]
     [Route("[controller]")]
+
     public class StudentController : ControllerBase
     {
 
@@ -40,6 +41,7 @@ namespace PAC.WebAPI
 
 
         [HttpPost]
+        [AuthorizationFilter]
         public IActionResult InsertStudent([FromBody] Student newStudent)
         {
             _studentLogic.InsertStudents(newStudent);
