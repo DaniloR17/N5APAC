@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\PAC.Domain\PAC.Domain.csproj" />
     <ProjectReference Include="..\PAC.IBusinessLogic\PAC.IBusinessLogic.csproj" />
+    <ProjectReference Include="..\PAC.ServicesFactory\PAC.ServicesFactory.csproj" />
     <ProjectReference Include="..\PAC.WebAPI\PAC.WebAPI.csproj" />
   </ItemGroup>
 </Project>

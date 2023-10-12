@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PAC.BusinessLogic\PAC.BusinessLogic.csproj" />
+    <ProjectReference Include="..\PAC.DataAccess\PAC.DataAccess.csproj" />
+    <ProjectReference Include="..\PAC.IDataAccess\PAC.IDataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
