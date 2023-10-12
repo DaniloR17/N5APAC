@@ -1,0 +1,2 @@
+Se agrega la inyeccion de dependencias en el proyecto PAC.WebAPI ya que es desde ahi que la app tiene el primer acceso y es el primer lugar donde instanciaria las clases.
+No se utiliza addSingleton Ya que no nos interesa que la instancia dure todo el ciclo de vida de la app; entre addScope y AddTransient nos parece correcto usar cualquiera de los dos.

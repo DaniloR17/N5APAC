@@ -32,7 +32,7 @@ public class StudentControllerTest
     public void PostStudentOk()
     {
         mock.Setup(x => x.InsertStudents(It.IsAny<Student>()));
-        var resultado = api.PostStudent(student);
+        var resultado = api.InsertStudent(student);
 
         var objeto = resultado as ObjectResult;
         var statusCode = objeto.StatusCode;
@@ -45,7 +45,7 @@ public class StudentControllerTest
     public void PostStudentFail()
     {
         mock.Setup(x => x.InsertStudents(It.IsAny<Student>()));
-        var resultado = api.PostStudent(student);
+        var resultado = api.InsertStudent(student);
 
         var objeto = resultado as ObjectResult;
         var statusCode = objeto.StatusCode;
