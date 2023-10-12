@@ -23,6 +23,7 @@
     <ProjectReference Include="..\PAC.IDataAccess\PAC.IDataAccess.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\PAC.ServicesFactory\PAC.ServicesFactory.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Controllers\" />

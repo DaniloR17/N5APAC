@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PAC.IBusinessLogic\PAC.IBusinessLogic.csproj" />
     <ProjectReference Include="..\PAC.Domain\PAC.Domain.csproj" />
+    <ProjectReference Include="..\PAC.IBusinessLogic\PAC.IBusinessLogic.csproj" />
     <ProjectReference Include="..\PAC.IDataAccess\PAC.IDataAccess.csproj" />
   </ItemGroup>
 </Project>

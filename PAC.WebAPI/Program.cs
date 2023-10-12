@@ -5,6 +5,7 @@ using PAC.DataAccess;
 using PAC.Domain;
 using PAC.IBusinessLogic;
 using PAC.IDataAccess;
+using PAC.ServicesFactory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IStudentsRepository<Student>, StudentsRepository<Student>>();
+
+var servicesFactory = new ServicesFactory();
+servicesFactory.RegistrateServices(builder.Services);
 
 var app = builder.Build();
 
